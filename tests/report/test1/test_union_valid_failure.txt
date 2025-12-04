@@ -1,0 +1,26 @@
+
+
+
+File and Function: test1.py::test_union_valid
+
+Exception Info:
+<ExceptionInfo AssertionError('assert False\n +  where False = is_valid(BST((-1, 0), BST((0, 0), NIL, NIL), NIL))') tblen=30>
+
+Failure Message:
+test1.py:76: in test_union_valid
+    def test_union_valid(bst1: BST[int,int], bst2: BST[int,int]) -> None:
+test1.py:80: in test_union_valid
+    assert is_valid(union_bst)
+E   assert False
+E    +  where False = is_valid(BST((-1, 0), BST((0, 0), NIL, NIL), NIL))
+E   Falsifying example: test_union_valid(
+E       bst1=build_bst_from_tuples([(-1, 0)]),
+E       bst2=build_bst_from_tuples([(0, 0)]),
+E   )
+E   Explanation:
+E       These lines were always and only run by failing examples:
+E           /lab4/bugs/bug1.py:171
+E           /lab4/bugs/bug1.py:172
+E           /lab4/bugs/bug1.py:173
+E           /lab4/src/BSTUtils.py:37
+

@@ -1,0 +1,24 @@
+
+
+
+File and Function: test4.py::test_delete_model
+
+Exception Info:
+<ExceptionInfo AssertionError('assert {(0, 0), (1, 0)} == {(1, 0)}\n  \n  Extra items in the left set:\n  \x1b[0m(\x1b[34;01m0\x1b[39;49;00m, \x1b[34;01m0\x1b[39;49;00m)\n  Use -v to get more diff') tblen=30>
+
+Failure Message:
+E   assert {(0, 0), (1, 0)} == {(1, 0)}
+      
+      Extra items in the left set:
+      [0m([34;01m0[39;49;00m, [34;01m0[39;49;00m)
+      Use -v to get more diff
+    Falsifying example: test_delete_model(
+        key=0,
+        bst=build_bst_from_tuples([(1, 0), (0, 0)]),
+    )
+    Explanation:
+        These lines were always and only run by failing examples:
+            /lab4/bugs/bug4.py:182
+            /lab4/bugs/bug4.py:183
+            /lab4/bugs/bug4.py:184
+

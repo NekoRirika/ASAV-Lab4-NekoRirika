@@ -1,0 +1,26 @@
+
+
+
+File and Function: test2.py::test_find_post_absent
+
+Exception Info:
+<ExceptionInfo AssertionError('assert 0 is None\n +  where 0 = find(0)\n +    where find = BST((1, 0), BST((0, 0), NIL, NIL), NIL).fi... 0), BST((0, 0), NIL, NIL), NIL) = delete(0)\n +        where delete = BST((1, 0), BST((0, 0), NIL, NIL), NIL).delete') tblen=30>
+
+Failure Message:
+E   assert 0 is None
+     +  where 0 = find(0)
+     +    where find = BST((1, 0), BST((0, 0), NIL, NIL), NIL).find
+     +      where BST((1, 0), BST((0, 0), NIL, NIL), NIL) = delete(0)
+     +        where delete = BST((1, 0), BST((0, 0), NIL, NIL), NIL).delete
+    Falsifying example: test_find_post_absent(
+        key=0,
+        bst=build_bst_from_tuples([(1, 0), (0, 0)]),
+    )
+    Explanation:
+        These lines were always and only run by failing examples:
+            /lab4/bugs/bug2.py:175
+            /lab4/bugs/bug2.py:176
+            /lab4/bugs/bug2.py:177
+            /lab4/bugs/bug2.py:71
+            /lab4/bugs/bug2.py:74
+

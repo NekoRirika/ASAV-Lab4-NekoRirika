@@ -1,0 +1,17 @@
+
+
+
+File and Function: test2.py::test_union_post
+
+Exception Info:
+<ExceptionInfo AssertionError('assert 888 == 999') tblen=30>
+
+Failure Message:
+E   assert 888 == 999
+    Falsifying example: test_union_post(
+        # The test always failed when commented parts were varied together.
+        bst1=build_bst_from_tuples([]),  # or any other generated value
+        bst2=build_bst_from_tuples([]),  # or any other generated value
+        search_key=0,  # or any other generated value
+    )
+

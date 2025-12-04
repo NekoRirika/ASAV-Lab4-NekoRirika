@@ -1,0 +1,16 @@
+
+
+
+File and Function: test2.py::test_delete_post
+
+Exception Info:
+<ExceptionInfo AssertionError('assert 0 == None') tblen=30>
+
+Failure Message:
+E   assert 0 == None
+    Falsifying example: test_delete_post(
+        key=0,
+        bst=build_bst_from_tuples([(1, 0), (0, 0)]),
+        search_key=0,
+    )
+

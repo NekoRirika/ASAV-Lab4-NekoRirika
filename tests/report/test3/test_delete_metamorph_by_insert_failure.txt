@@ -1,0 +1,23 @@
+
+
+
+File and Function: test3.py::test_delete_metamorph_by_insert
+
+Exception Info:
+<ExceptionInfo AssertionError('assert False\n +  where False = equivalent(NIL, BST((0, 0), NIL, NIL))') tblen=30>
+
+Failure Message:
+E   assert False
+     +  where False = equivalent(NIL, BST((0, 0), NIL, NIL))
+    Falsifying example: test_delete_metamorph_by_insert(
+        key1=0,
+        key2=0,
+        value=0,  # or any other generated value
+        bst=build_bst_from_tuples([]),
+    )
+    Explanation:
+        These lines were always and only run by failing examples:
+            /lab4/bugs/bug3.py:166
+            /lab4/bugs/bug3.py:167
+            /lab4/bugs/bug3.py:168
+
